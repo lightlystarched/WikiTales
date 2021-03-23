@@ -1,1 +1,1 @@
-A new text-based dynamic narrative MMO
+A new text-based dynamic narrative MMO.
