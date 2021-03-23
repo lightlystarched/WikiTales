@@ -1,0 +1,23 @@
+{
+  "name": "wikitales",
+  "version": "0.0.1",
+  "description": "A text-based dynamic narrative MMO",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightlystarched/WikiTales.git"
+  },
+  "author": "Joshua Drama <joshua.william.drama@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightlystarched/WikiTales/issues"
+  },
+  "homepage": "https://github.com/lightlystarched/WikiTales#readme",
+  "dependencies": {
+    "mongoose": "^5.12.2"
+  }
+}
