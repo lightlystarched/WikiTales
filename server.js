@@ -5,8 +5,8 @@ import http from 'http';
 import Models from './Models/index.js';
 
 // Variable declarations
-const Rooms = Models.Rooms;
-console.log(Rooms.get())
+const Room = Models.Room;
+console.log(Room.get('some specifics'))
 
 const hostname = '127.0.0.1';
 const port = 3000;
