@@ -1,5 +1,5 @@
-// App Global Dependencies
-import http from 'http';
+// App dependencies
+const express = require('express');
 
 // Import the models we need
 import Models from './Models/index.js';
@@ -8,15 +8,13 @@ import Models from './Models/index.js';
 const Room = Models.Room;
 console.log(Room.get('some specifics'))
 
-const hostname = '127.0.0.1';
+const app = express();
 const port = 3000;
 
-const server = http.createServer((request, response) => {
-  response.statusCode = 200;
-  response.setHeader('Content-Type', 'text/plain');
-  response.end('Hello World');
-});
+app.get('/', (req, res) => {
+  res.send('Hello World to me')
+})
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
 });
